@@ -1,0 +1,87 @@
+body {
+    background-color: whitesmoke;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .calculator {
+    background-color: #e6dad7;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+    width: 40%;
+  }
+  
+  .calculator-text {
+    text-align: center;
+    border: 2px solid black;
+    margin-bottom: 20px;
+    color: white;
+    background-color: black;
+    font-family: "Times New Roman", serif;
+    font-weight: bold;
+    margin-left: -25px;
+    margin-right: -25px;
+  }
+  
+  .display-container {
+    margin-bottom: 8px;
+    margin-top: -10px;
+    margin-left: -25px;
+    margin-right: -5px;
+  }
+  
+  #display {
+    width: 100%;
+    padding: 10px;
+    font-size: 24px;
+    text-align: right;
+    border: none;
+    outline: none;
+    background-color: #f6f6f6;
+  }
+  
+  .button-row {
+    display: flex;
+    justify-content: space-between; //equal spacing kosam
+    margin-bottom: 10px;
+    border: black;
+    margin-left: -18px; /*buttonlu left right jargaley*/
+    margin-right: -20px;
+  }
+  
+  .button {
+    flex: 1; /* minimize cheshna buttons kadlakunda*/
+    width: 75px; /* Set a fixed width for the buttons */
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    font-family: "Times New Roman", serif;
+    font-weight: bold;
+    color: black;
+    background-color: #faf5f3;
+    border: black;
+    cursor: pointer;
+    margin-bottom: 3px;
+    margin-right: 3px;
+  }
+  
+  .button.zero {
+    flex-grow: 3.2;
+  }
+  
+  .button.operator {
+    background-color: #d9253d;
+  }
+  
+  .button.clear {
+    background-color: #ff5555;
+  }
+  
+  .button.equal {
+    background-color: #00cc55;
+  }
+  
